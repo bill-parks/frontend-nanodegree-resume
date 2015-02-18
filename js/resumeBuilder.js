@@ -88,6 +88,18 @@ var education = {
             "school": "Udacity",
             "dates": 2015,
             "url": "https://www.udacity.com/course/ud245"
+        },
+        {
+            "title": "Object-Oriented JavaScript",
+            "school": "Udacity",
+            "dates": 2015,
+            "url": "https://www.udacity.com/course/ud015"
+        },
+        {
+            "title": "HTML5 Canvas",
+            "school": "Udacity",
+            "dates": 2015,
+            "url": "https://www.udacity.com/course/ud292"
         }
     ],
     "display" : function(){
@@ -105,7 +117,7 @@ var education = {
 			$(".education-entry:last").append(formattedSchoolDates);
 			};
     	for (i in education.onlineCourses){
-			$("#onlineclasses").append(HTMLschoolStart);
+			$("#onlineclasses").append(HTMLonlineStart);
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[i].title).replace("#",education.onlineCourses[i].url);
 			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[i].school);
 			var formattedOnlineCourse = formattedOnlineTitle + formattedOnlineSchool;
